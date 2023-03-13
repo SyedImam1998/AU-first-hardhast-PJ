@@ -3,12 +3,12 @@
 async function main() {
 
 
-  const Counter = await hre.ethers.getContractFactory("Counter");
-  const counter = await Counter.deploy();
+  const Al = await hre.ethers.getContractFactory("Alexam");
+  const al = await Al.deploy();
 
-  await counter.deployed();
+  await al.deployed();
 
-  console.log( `counter deployed to:${counter.address}`
+  console.log( `counter deployed to:${al.address}`
   );
 }
 
